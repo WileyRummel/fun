@@ -259,7 +259,7 @@ class MyGame(arcade.Window):
     #   #remove the coin
     #   star.remove_from_sprite_lists()
     #   #play a sound
-    #   arcade.play_sound(self.collect_star_sound)
+      # arcade.play_sound(self.collect_star_sound)
     #   #add one to the score
     #   self.score += 10
 
@@ -287,11 +287,11 @@ class MyGame(arcade.Window):
       self.player_sprite.center_x = PLAYER_START_X
       self.player_sprite.center_y = PLAYER_START_Y
 
-    #set the camera to the start
-    self.view_left = 0
-    self.view_bottom = 0
-    changed_viewport = True
-    arcade.play_sound(self.game_over)
+      #set the camera to the start
+      self.view_left = 0
+      self.view_bottom = 0
+      changed_viewport = True
+      arcade.play_sound(self.game_over)
 
     #See if the user got  to the end of the level
     if self.player_sprite.center_x >= self.end_of_map:
