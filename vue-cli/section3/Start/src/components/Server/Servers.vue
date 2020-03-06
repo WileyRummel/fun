@@ -3,7 +3,7 @@
         <ul class="list-group">
             <app-server
             v-for="server in servers"
-            :servers="server">
+            :server="server">
             </app-server>
         </ul>
     </div>
@@ -21,8 +21,6 @@
                     { id: 3, status: 'Unknown' },
                     { id: 4, status: 'Down' },
                 ]}
-        },
-        methods: {
         },
         components: {
             appServer: Server

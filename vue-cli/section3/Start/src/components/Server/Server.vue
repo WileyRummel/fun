@@ -6,14 +6,14 @@
     </li>
 </template>
 <script>
-import { serverBus } from "../../main";
+    import { serverBus } from "../../main";
 
-export default {
-    props: [ 'server' ],
-    methods: {
-        serverSelected() {
-            serverBus.$emit('serverSelected', this.server)
-}
+    export default {
+        props: [ 'server' ],
+        methods: {
+            serverSelected() {
+                serverBus.$emit('serverSelected', this.server)
+            }
+        }
     }
-}
 </script>
